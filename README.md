@@ -1,33 +1,87 @@
-# RIM · Ampliación Matemáticas — PEI 1
+# PEI 1 — Dinámica de Actitud Satelital
 
-Repositorio de material y apuntes para la prueba de evaluación intermedia 1 de Ampliación de Matemáticas.
+Proyecto grupal de  **Ampliación de Matemáticas 1 (MUSE - ETSIAE)** .
 
-## Contenido
+Creado por: Rubén Nuñez, Ignacio Pérez y Mario Penin
 
-- **Apuntes** — teoría y explicaciones por tema
-- **Ejercicios** — problemas resueltos y propuestos
-- **Exámenes** — pruebas anteriores y simulacros
+El objetivo es estudiar la dinámica de rotación de un satélite y comparar distintos métodos numéricos usando  **Python** .
 
-## Estructura sugerida
+## Objetivos del proyecto
+
+Durante esta primera fase trabajaremos hasta el  **Milestone 4** :
+
+* Implementar métodos de integración numérica.
+* Comparar su precisión y estabilidad.
+* Estudiar cómo afecta el paso temporal `<span>Δt</span>`.
+* Aplicar los métodos a problemas de dinámica y actitud satelital.
+* Representar y analizar los resultados mediante gráficas.
+
+## Milestones
+
+### Milestone 1
+
+Implementación básica de:
+
+* Euler.
+* Crank-Nicolson.
+* RK4.
+
+Comparación de resultados usando distintos pasos de tiempo.
+
+### Milestone 2
+
+Crear funciones reutilizables para:
+
+* Euler.
+* Euler inverso.
+* Crank-Nicolson.
+* RK4.
+
+También se creará una función general para integrar problemas del tipo:
 
 ```
-├── apuntes/          # teoría por tema (markdown, LaTeX, PDF…)
-├── ejercicios/       # problemas con solución
-└── examenes/         # PEIs anteriores y simulacros
+dU/dt = F(U, t)
 ```
 
-## Cómo trabajar con este repo
+### Milestone 3
 
-Clonar en local:
+Estudio del  **error numérico y la convergencia** :
 
-```bash
-git clone https://github.com/MP-19-creator/RIM-AmpliacionMatematicas-PEI1.git
-```
+* Extrapolación de Richardson.
+* Comparación de errores.
+* Cálculo del orden de convergencia de cada método.
 
-Subir cambios:
+### Milestone 4
 
-```bash
-git add .
-git commit -m "descripción del cambio"
-git push
-```
+Estudio de la **estabilidad numérica** de:
+
+* Euler.
+* Euler inverso.
+* Leap-Frog.
+* Crank-Nicolson.
+* RK4.
+
+Se calcularán sus regiones de estabilidad y se compararán con los resultados de las simulaciones.
+
+## Organización
+
+El proyecto se desarrollará de forma modular, separando:
+
+* Métodos numéricos.
+* Problemas físicos.
+* Análisis de errores y estabilidad.
+* Gráficas y visualización.
+
+## Tecnologías
+
+* Python
+* NumPy
+* SciPy
+* Matplotlib
+
+## Estado
+
+* [ ] Milestone 1
+* [ ] Milestone 2
+* [ ] Milestone 3
+* [ ] Milestone 4
