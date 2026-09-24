@@ -24,7 +24,7 @@ Implementación básica de:
 
 * Euler.
 * Crank-Nicolson.
-* RK4.
+* RK4
 
 Comparación de resultados usando distintos pasos de tiempo.
 
